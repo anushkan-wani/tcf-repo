@@ -1,0 +1,134 @@
+Microsoft Windows [Version 10.0.22621.674]
+(c) Microsoft Corporation. All rights reserved.
+
+C:\Users\anush>mkdir <TCF-Git>
+The syntax of the command is incorrect.
+
+C:\Users\anush>mkdir TCF-GIT
+
+C:\Users\anush>cd C/anush/Desktop/TCF-GIT
+The system cannot find the path specified.
+
+C:\Users\anush>C:\Users\anush\TCF-GIT
+'C:\Users\anush\TCF-GIT' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Users\anush>cd C:\Users\anush\TCF-GIT
+
+C:\Users\anush\TCF-GIT>git clone https://github.com/anushkan-wani/tcf-repo.git
+Cloning into 'tcf-repo'...
+remote: Enumerating objects: 3, done.
+remote: Counting objects: 100% (3/3), done.
+remote: Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+Receiving objects: 100% (3/3), done.
+
+C:\Users\anush\TCF-GIT>git add
+fatal: not a git repository (or any of the parent directories): .git
+
+C:\Users\anush\TCF-GIT>git add C:\Users\anush\TCF-GIT\tcf-repo\text-file
+fatal: not a git repository (or any of the parent directories): .git
+
+C:\Users\anush\TCF-GIT>C:\Users\anush\TCF-GIT\tcf-repo\text-file.git
+'C:\Users\anush\TCF-GIT\tcf-repo\text-file.git' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Users\anush\TCF-GIT>git add C:\Users\anush\TCF-GIT\tcf-repo\text-file.git
+fatal: not a git repository (or any of the parent directories): .git
+
+C:\Users\anush\TCF-GIT>cd C:\Users\anush\TCF-GIT\tcf-repo\text-file
+The directory name is invalid.
+
+C:\Users\anush\TCF-GIT>cd C:\Users\anush\TCF-GIT\tcf-repo
+
+C:\Users\anush\TCF-GIT\tcf-repo>git add
+Nothing specified, nothing added.
+hint: Maybe you wanted to say 'git add .'?
+hint: Turn this message off by running
+hint: "git config advice.addEmptyPathspec false"
+
+C:\Users\anush\TCF-GIT\tcf-repo>git add .
+
+C:\Users\anush\TCF-GIT\tcf-repo>git commit -m new text file
+error: pathspec 'text' did not match any file(s) known to git
+error: pathspec 'file' did not match any file(s) known to git
+
+C:\Users\anush\TCF-GIT\tcf-repo>git commit -m "new text file"
+Author identity unknown
+
+*** Please tell me who you are.
+
+Run
+
+  git config --global user.email "you@example.com"
+  git config --global user.name "Your Name"
+
+to set your account's default identity.
+Omit --global to set the identity only in this repository.
+
+fatal: unable to auto-detect email address (got 'anush@DESKTOP-TLCTDRP.(none)')
+
+C:\Users\anush\TCF-GIT\tcf-repo>git config anushkan.wani@gmail.com
+
+C:\Users\anush\TCF-GIT\tcf-repo>git commit -m "new text file"
+Author identity unknown
+
+*** Please tell me who you are.
+
+Run
+
+  git config --global user.email "you@example.com"
+  git config --global user.name "Your Name"
+
+to set your account's default identity.
+Omit --global to set the identity only in this repository.
+
+fatal: unable to auto-detect email address (got 'anush@DESKTOP-TLCTDRP.(none)')
+
+C:\Users\anush\TCF-GIT\tcf-repo>git config --global user.email "anushkan.wani@gmail.com"
+
+C:\Users\anush\TCF-GIT\tcf-repo>git commit -m "new text file"
+[main 0ba718d] new text file
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 text-file
+
+C:\Users\anush\TCF-GIT\tcf-repo>git push
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 281 bytes | 281.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/anushkan-wani/tcf-repo.git
+   9503de2..0ba718d  main -> main
+
+C:\Users\anush\TCF-GIT\tcf-repo>git pull
+Already up to date.
+
+C:\Users\anush\TCF-GIT\tcf-repo>git checkout -b "new-branch"
+Switched to a new branch 'new-branch'
+
+C:\Users\anush\TCF-GIT\tcf-repo>git push origin "new-branch"
+Total 0 (delta 0), reused 0 (delta 0), pack-reused 0
+remote:
+remote: Create a pull request for 'new-branch' on GitHub by visiting:
+remote:      https://github.com/anushkan-wani/tcf-repo/pull/new/new-branch
+remote:
+To https://github.com/anushkan-wani/tcf-repo.git
+ * [new branch]      new-branch -> new-branch
+
+C:\Users\anush\TCF-GIT\tcf-repo>git checkout -b "main"
+fatal: a branch named 'main' already exists
+
+C:\Users\anush\TCF-GIT\tcf-repo>git checkout "main"
+Switched to branch 'main'
+Your branch is up to date with 'origin/main'.
+
+C:\Users\anush\TCF-GIT\tcf-repo>git push origin "main"
+Everything up-to-date
+
+C:\Users\anush\TCF-GIT\tcf-repo>git checkout "new-branch"
+Switched to branch 'new-branch'
+M       text-file
+
+C:\Users\anush\TCF-GIT\tcf-repo>git push origin "new-branch"
+Everything up-to-date
